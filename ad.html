@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__label">     
+                <a href="index.php">Звук</a>
+            </div>
+
+            <ul class="navbar">
+                <li class="navbar__item"><a href="index.php">Главная</a></li>
+            </ul>
+    </header>
+    <main>
+        <div class="col">
+            <p class="modal-text">Регистрация</p>
+            <form action="formcon.php" method="post">
+             <input type="text" class="form_control" name="login" id="Login" placeholder="Введите логин">
+             <input type="text" class="form_control" name="name" id="Name" placeholder="Введите имя">
+             <input type="password" class="form_control" name="pass" id="pass" placeholder="Введите пароль">
+             <button class="btn_btn btn-success" type="submit">Зарегистрировать</button>
+             <p class="sigin">У вас есть аккаунт?<a href="#" id="myBtn" >войдите</a></p>
+             <div id="myModal" class="modal" >
+             <div class="modal-content">
+                 <div class="modal_header">
+                     <span class="close">&times;</span>
+                     <p class="modal-text">Авторизация</p>
+                    <form action="auth.php" method="post">
+                     <input type="text" class="form_control" name="login" id="Login" placeholder="Введите логин"><br> 
+                     <input type="password" class="form_control" name="pass" id="pass" placeholder="Введите пароль"><br>
+                     <button class="btn btn-success" type="submit">Войти</button>
+                    </form>
+                    <script src="/assets/js/main.js"></script>
+     
+                 </div>
+                 
+             </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
